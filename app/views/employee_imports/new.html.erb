@@ -1,0 +1,4 @@
+<%= form_tag({action: :imports}, multipart: true, url: employee_imports_imports_path) do %>
+  <%= file_field_tag :file %>
+  <div><%= submit_tag 'Import' %></div>
+<% end %>

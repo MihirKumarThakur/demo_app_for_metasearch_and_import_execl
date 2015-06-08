@@ -6,10 +6,18 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   root to: 'employees#index'
-  resources :employees
+  # resources :employees
   resources :employee_imports
 
   post 'employee_imports/imports' => 'employee_imports#imports'
+  match 'employees/sort_by_first_character' => 'employees#sort_by_first_character',via: [:get, :post], as: :sort_by_first_character
+
+  resources :employees do
+    collection do
+      match 'index' => 'employees#index', via: [:get, :post], as: :search
+    end
+  end
+
   
 
   # Example of regular route:

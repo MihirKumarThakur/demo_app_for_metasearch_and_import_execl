@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150604074123) do
+ActiveRecord::Schema.define(version: 20150607061028) do
 
   create_table "departments", force: :cascade do |t|
     t.string   "department_name"
@@ -30,6 +30,10 @@ ActiveRecord::Schema.define(version: 20150604074123) do
     t.string   "salary"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "email"
+    t.integer  "expense"
+    t.string   "city"
+    t.integer  "age"
   end
 
 end

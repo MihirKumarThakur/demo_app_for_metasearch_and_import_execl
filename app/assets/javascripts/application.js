@@ -14,3 +14,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+// $(document).ready(function(){
+//     $("#name-sort").click(function(){
+       
+//     		$.ajax({
+// 				url: '/employees/sort_by_first_character',
+// 				type: 'get',
+// 				data: {sort_by: $(this).attr('id') }
+// 				// success: function(response){
+// 				// 	console.log("hello");
+// 				// },
+// 			});
+
+
+//     });
+// });

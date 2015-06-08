@@ -20,3 +20,9 @@
 	# Department.create(department_name: "recovery", department_id: 5, department_location: "ranchi" )
 
 
+	# Employee.all.each do |emp| 
+		
+	# 	emp.update(city: Faker::Address.city, email: Faker::Internet.email,expense: rand(999..5000), age: rand(20..50))
+	# end
+
+

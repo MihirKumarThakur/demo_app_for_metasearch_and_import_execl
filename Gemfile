@@ -32,12 +32,20 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'formtastic', '~> 3.0'
 
 gem 'roo', '~> 2.0.0'
 # gem 'roo-xls'
 gem "iconv"
 
-gem "meta_search", :git => "git://github.com/ernie/meta_search.git"
+gem 'ransack', github: 'activerecord-hackery/ransack'
+# gem 'will_paginate', '~> 3.0.6'
+
+gem 'kaminari'
+
+gem 'bootstrap_form'
+gem 'twitter-bootstrap-rails', '~> 3.2.0'
+gem 'bootstrap-sass',  '~> 3.2.0.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,0 +1,7 @@
+<%= form_tag('/employees/sort_by_first_character',:html => {:class => "form-inline list-unstyled"}) do -%>
+<div class="form-group form-inline">
+	<label>Sort by Name first Char</label><%= select_tag 'name-sort', options_for_select([" ", 'A-M','N-Z']), :class => "small_dropdown form-control" %>
+	<label>Sort By Age :-</label> </span><%= select_tag 'age-sort', options_for_select([" " ,'20-35','35-50']), :class => "small_dropdown form-control" %>
+	  <div><%= submit_tag 'Search' %></div>
+</div>
+<% end -%>
